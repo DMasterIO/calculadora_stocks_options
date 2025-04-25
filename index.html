@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>Cálculo de Stock Options</title>
   <link rel="stylesheet" href="styles.css">
-  
+  <!-- Se incluye Chart.js desde CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
   <h1>Cálculo de Rendimiento de Stock Options</h1>
@@ -26,6 +27,11 @@
   
   <div class="result" id="result"></div>
   
-  <script type="text/javascript" src="scripts.js"></script>
+  <!-- Contenedor para la gráfica -->
+  <div id="chartContainer">
+    <canvas id="yieldChart" width="600" height="300"></canvas>
+  </div>
+  
+  <script src="scripts.js"></script>
 </body>
 </html>
