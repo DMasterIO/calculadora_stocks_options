@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cálculo de Stock Options</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <h1>Cálculo de Rendimiento de Stock Options</h1>
+  <p>Ingresa tus datos:</p>
+  <form id="calcForm">
+    <label for="monthlyGross">Sueldo Mensual Bruto (CLP):</label>
+    <input type="number" id="monthlyGross" required value="">
+    
+    <label for="stockUSD">Stock Options Bruto (USD) [lo que sale en el correo]:</label>
+    <input type="number" id="stockUSD" required value="">
+    
+    <label for="exchangeRate">Tipo de Cambio (CLP/USD):</label>
+    <!-- Se permite decimales para el tipo de cambio -->
+    <input type="number" id="exchangeRate" required step="any">
+    <div id="exchangeRateIndicator" class="info"></div>
+    
+    <button type="submit">Calcular</button>
+  </form>
+  
+  <div class="result" id="result"></div>
+  
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
